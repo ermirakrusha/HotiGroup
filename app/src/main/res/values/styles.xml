@@ -7,5 +7,11 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>About us</item>
+        <item>Products</item>
+        <item>Orders</item>
+        <item>Contact</item>
+    </string-array>
 </resources>
