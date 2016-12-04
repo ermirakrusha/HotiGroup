@@ -12,13 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.view.Gravity;
-import android.widget.ImageSwitcher;
-import android.widget.ImageView;
-import android.widget.TextSwitcher;
-import android.widget.TextView;
-import android.widget.ViewSwitcher.ViewFactory;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,52 +22,11 @@ public class MainActivity extends AppCompatActivity {
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
-    private static final String[] TEXT = { "Image 1", "Image 2", "Image 3" };
-    private static final int[] IMAGES = { R.drawable.mf1, R.drawable.mf2,
-            R.drawable.mf3
-    };
-    private int Position = 0;
-    private TextSwitcher switcherText;
-    private ImageSwitcher switcherImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-
-        switcherText = (TextSwitcher) findViewById(R.id.switcherText);
-        switcherText.setFactory(new ViewFactory() {
-            @Override
-            public View makeView() {
-                TextView textView = new TextView(MainActivity.this);
-                textView.setGravity(Gravity.CENTER);
-                return textView;
-            }
-        });
-
-        switcherText.setInAnimation(this, android.R.anim.fade_in);
-        switcherText.setOutAnimation(this, android.R.anim.fade_out);
-
-        switcherImage = (ImageSwitcher) findViewById(R.id.switcherImage);
-        switcherImage.setFactory(new ViewFactory() {
-            @Override
-            public View makeView() {
-                ImageView imageView = new ImageView(MainActivity.this);
-                return imageView;
-            }
-        });
-        switcherImage.setInAnimation(this, android.R.anim.slide_in_left);
-        switcherImage.setOutAnimation(this, android.R.anim.slide_out_right);
-
-        onSwitch(null);
-    }
-
-    public void onSwitch(View view) {
-        switcherText.setText(TEXT[Position]);
-        switcherImage.setBackgroundResource(IMAGES[Position]);
-        Position = (Position + 1) % TEXT.length;
-
-
+        setContentView(R.layout.activity_main);
         mTitle = mDrawerTitle = getTitle();
         mNavigationDrawerItemTitles= getResources().getStringArray(R.array.navigation_drawer_items_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -82,13 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
         setupToolbar();
 
-        DataModel[] drawerItem = new DataModel[3];
+        DataModel[] drawerItem = new DataModel[4];
 
-        drawerItem[0] = new DataModel(R.drawable.connect, "Home");
-        drawerItem[1] = new DataModel(R.drawable.aboutus, "About us");
-        drawerItem[2] = new DataModel(R.drawable.products, "Products");
-
-
+        drawerItem[0] = new DataModel(R.drawable.products, "Products");
+        drawerItem[1] = new DataModel(R.drawable.orders, "Orders");
+        drawerItem[2] = new DataModel(R.drawable.about, "About Us");
+        drawerItem[3] = new DataModel(R.drawable.contact, "Contact");
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
 
@@ -98,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         setupDrawerToggle();
+
 
     }
 
@@ -116,13 +68,16 @@ public class MainActivity extends AppCompatActivity {
 
         switch (position) {
             case 0:
-                fragment = new HomeFragment();
+                fragment = new ProductsFragment();
                 break;
             case 1:
-                fragment = new AboutusFragment();
+                fragment = new OrdersFragment();
                 break;
             case 2:
-                fragment = new ProductsFragment();
+                fragment = new AboutUsFragment();
+                break;
+            case 3:
+                fragment = new ContactFragment();
                 break;
 
             default:
@@ -177,8 +132,4 @@ public class MainActivity extends AppCompatActivity {
         mDrawerToggle.syncState();
     }
 
-
-
 }
-
-

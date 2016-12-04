@@ -1,9 +1,5 @@
 package com.example.ermira.hotigroup;
 
-/**
- * Created by Albiona on 12/4/2016.
- */
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,6 +9,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+/**
+ * Created by ermira on 12/4/2016.
+ */
 public class DrawerItemCustomAdapter extends ArrayAdapter<DataModel> {
 
     Context mContext;
@@ -47,3 +47,4 @@ public class DrawerItemCustomAdapter extends ArrayAdapter<DataModel> {
         return listItem;
     }
 }
+

@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">HotiGroup</string>
+    <string name="app_name">Hoti Group</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="aboutus">Three generations of delivering the highest quality of work
+        using the finest materials. </string>
+    <string name="aboutus2">Given our time in the business, we have developed a vast amount
+        of knowledge regarding our work.</string>
+    <string name="aboutus3">Our goal is to transform your ideas into reality.
+        We leave our customers with something only attained by our level of craftsmanship.</string>
+
+
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Products</item>
+        <item>Orders</item>
+        <item>AboutUs</item>
+        <item>Contact</item>
+    </string-array>
 </resources>

@@ -2,9 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/back"
-    >
+    android:orientation="vertical">
 
 
     <TextView
@@ -15,7 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textSize="45dp"
-        android:text="Products"
+        android:text="Contact"
         android:textStyle="bold"/>
 
     <TextView

@@ -1,10 +1,7 @@
 package com.example.ermira.hotigroup;
-
 /**
- * Created by Albiona on 12/4/2016.
+ * Created by ermira on 12/4/2016.
  */
-
-
 public class DataModel {
 
     public int icon;
