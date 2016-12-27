@@ -5,6 +5,8 @@
     <color name="colorAccent">#ff4081</color>
     <!--<color name="textbody">#000000</color>-->
     <color name="textbody">#FDFCFB</color>
+    <color name="login_background">#2980b9</color>
+    <color name="register_background">#2c3e50</color>
 
 
 </resources>

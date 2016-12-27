@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/blockmenu">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_home">
+        </item>
+        <item
+            android:id="@+id/products"
+            android:title="Products"
+            android:icon="@drawable/products">
+        </item>
+
+        <item
+            android:id="@+id/orders"
+            android:title="Orders"
+            android:icon="@drawable/orders">
+        </item>
+
+        <item
+            android:id="@+id/about"
+            android:title="About Us"
+            android:icon="@drawable/about">
+        </item>
+
+        <item
+            android:id="@+id/contact"
+            android:title="Contact"
+            android:icon="@drawable/contact">
+        </item>
+
+    </group>
+
+</menu>
