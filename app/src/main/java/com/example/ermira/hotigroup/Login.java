@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
     EditText username,password;
     Button loginbtn,linktoregister;
     String Username,Password;
-    String login_url = "http://192.168.100.8/AE/login.php";
+    String login_url = "http://192.168.1.15/AE/login.php";
     AlertDialog.Builder builder;
     SharedPreferences.Editor editor;
 
@@ -54,6 +54,13 @@ public class Login extends AppCompatActivity {
         loginbtn = (Button)findViewById(R.id.btnLogin);
         linktoregister = (Button)findViewById(R.id.btnLinkToRegisterScreen);
         builder = new AlertDialog.Builder(Login.this);
+
+        linktoregister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this, Register.class));
+            }
+        });
 
 
 
