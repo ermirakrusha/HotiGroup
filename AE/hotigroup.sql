@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
+-- version 4.5.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Dec 23, 2016 at 03:09 PM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 5.6.28
+-- Host: 127.0.0.1
+-- Generation Time: Jan 18, 2017 at 10:19 PM
+-- Server version: 10.1.10-MariaDB
+-- PHP Version: 5.6.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -25,8 +25,6 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `comment`
 --
-CREATE DATABASE hotigroup;
-use hotigroup;
 
 CREATE TABLE `comment` (
   `id_comment` int(11) NOT NULL,
@@ -34,6 +32,13 @@ CREATE TABLE `comment` (
   `id_products` int(11) NOT NULL,
   `id_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `comment`
+--
+
+INSERT INTO `comment` (`id_comment`, `textcomment`, `id_products`, `id_user`) VALUES
+(0, 'ahdjaj', 100, 9);
 
 -- --------------------------------------------------------
 
@@ -47,6 +52,19 @@ CREATE TABLE `products` (
   `description` text NOT NULL,
   `img` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id_products`, `title`, `description`, `img`) VALUES
+(100, 'Window', 'Readymade Wooden Windows From DoorsIndia, One Of The Finest Wooden Products Manufacturer In North-East. Wooden Windows Are Made From Solid Hardwood And Teakwood Completely Kiln Seasoned To Provide Protection Against Termites, Borer & Bending. ', 'http://www.doorsindia.com/photo/photo54.jpg'),
+(101, 'Door', 'Readymade Moulded Doors From DoorsIndia One Of The Finest Door Manufacturers In North-East. Moulded Doors Made From Solid Hardwood Completely Treated To Provide Protection Against Termites, Borer & Bending With HDF Sheets 3.5mm Pasted On Both Faces. The HDF Sheets Are Exclusively Imported From Germany & Europe. ', 'http://www.doorsindia.com/photo/photo1.jpg'),
+(102, 'Window', 'Readymade Wooden Windows From DoorsIndia, One Of The Finest Wooden Products Manufacturer In North-East. Wooden Windows Are Made From Solid Hardwood And Teakwood Completely Kiln Seasoned To Provide Protection Against Termites, Borer & Bending. ', 'http://www.doorsindia.com/photo/photo61.jpg'),
+(103, 'Door', 'Readymade Wooden Doors From DoorsIndia, One Of The Finest Door Manufacturers In North-East. Wooden Doors Made From Solid Hardwood And Teakwood Completely Kiln Seasoned To Provide Protection Against Termites, Borer & Bending. \r\n', 'http://www.doorsindia.com/photo/photo34.jpg'),
+(104, 'Window', 'Readymade Wooden Windows From DoorsIndia, One Of The Finest Wooden Products Manufacturer In North-East. Wooden Windows Are Made From Solid Hardwood And Teakwood Completely Kiln Seasoned To Provide Protection Against Termites, Borer & Bending. ', 'http://www.doorsindia.com/photo/photo56.jpg'),
+(105, 'Window', 'Readymade Wooden Windows From DoorsIndia, One Of The Finest Wooden Products Manufacturer In North-East. Wooden Windows Are Made From Solid Hardwood And Teakwood Completely Kiln Seasoned To Provide Protection Against Termites, Borer & Bending. ', 'http://www.doorsindia.com/photo/photo51.jpg'),
+(106, 'Door', 'Readymade Moulded Doors From DoorsIndia One Of The Finest Door Manufacturers In North-East. Moulded Doors Made From Solid Hardwood Completely Treated To Provide Protection Against Termites, Borer & Bending With HDF Sheets 3.5mm Pasted On Both Faces. The HDF Sheets Are Exclusively Imported From Germany & Europe. ', 'http://www.doorsindia.com/photo/photo3.jpg');
 
 -- --------------------------------------------------------
 
@@ -62,6 +80,14 @@ CREATE TABLE `user_info` (
   `username` varchar(50) NOT NULL,
   `password` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user_info`
+--
+
+INSERT INTO `user_info` (`id_user`, `name`, `lastname`, `email`, `username`, `password`) VALUES
+(8, 'Ermira', 'Krusha', 'ermira-pz@hotmail.com', 'ekrusha', '123456'),
+(9, '1', '2', '3', '4', '5');
 
 --
 -- Indexes for dumped tables
@@ -97,7 +123,7 @@ ALTER TABLE `user_info`
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `id_user` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_user` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- Constraints for dumped tables
 --

@@ -13,11 +13,7 @@
             android:icon="@drawable/products">
         </item>
 
-        <item
-            android:id="@+id/orders"
-            android:title="Orders"
-            android:icon="@drawable/orders">
-        </item>
+
 
         <item
             android:id="@+id/about"

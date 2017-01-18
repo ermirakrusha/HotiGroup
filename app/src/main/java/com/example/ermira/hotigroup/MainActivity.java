@@ -71,14 +71,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 drawerLayout.closeDrawers();
                 break;
 
-            case R.id.orders:
-                fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.content_frame, new OrdersFragment());
-                fragmentTransaction.commit();
-                getSupportActionBar().setTitle("Order");
-                item.setCheckable(true);
-                drawerLayout.closeDrawers();
-                break;
+
 
             case R.id.about:
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();

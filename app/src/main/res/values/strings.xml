@@ -15,7 +15,6 @@
 
     <string-array name="navigation_drawer_items_array">
         <item>Products</item>
-        <item>Orders</item>
         <item>AboutUs</item>
         <item>Contact</item>
     </string-array>
