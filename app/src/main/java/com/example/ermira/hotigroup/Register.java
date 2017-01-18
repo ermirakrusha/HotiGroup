@@ -33,7 +33,7 @@ public class Register extends AppCompatActivity {
     EditText name,lastname,email,username,password,conpass;
     String Name,LastName,Email,UserName,Password,ConPass;
     AlertDialog.Builder builder;
-    String register_url = "http://192.168.0.109/AE/register.php";
+    String register_url = "http://192.168.1.2/AE/register.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

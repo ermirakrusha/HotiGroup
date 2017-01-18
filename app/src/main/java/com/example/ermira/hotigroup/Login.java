@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
     EditText username,password;
     Button loginbtn,linktoregister;
     String Username,Password;
-    String login_url = "http://192.168.0.109/AE/login.php";
+    String login_url = "http://192.168.1.2/AE/login.php";
     AlertDialog.Builder builder;
     SharedPreferences.Editor editor;
 

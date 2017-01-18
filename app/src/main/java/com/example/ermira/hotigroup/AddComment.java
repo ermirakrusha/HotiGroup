@@ -42,8 +42,8 @@ public class AddComment extends AppCompatActivity{
     List<Comment> komnetet = new ArrayList<Comment>();
 
     ListView listView;
-    private static final String url = "http://192.168.0.109/AE/comments.php";
-    private static final String urlC = "http://192.168.0.109/AE/addcomments.php";
+    private static final String url = "http://192.168.1.2/AE/comments.php";
+    private static final String urlC = "http://192.168.1.2/AE/addcomments.php";
     String id;
     int idu;
 
