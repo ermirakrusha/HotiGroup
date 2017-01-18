@@ -1,15 +1,31 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ermira.hotigroup.Home">
+    android:orientation="vertical"
+    tools:context="com.example.ermira.hotigroup.Home"
+    android:weightSum="1">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:id="@+id/reg"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="201dp"
+        app:srcCompat="@drawable/imm"
+        android:id="@+id/imageView4"
+        android:layout_weight="1.70" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        app:srcCompat="@drawable/im2"
+        android:id="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/im3"
+        android:id="@+id/imageView6" />
+</LinearLayout>

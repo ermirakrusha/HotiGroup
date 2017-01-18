@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:background="#C0C0C0">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
         android:gravity="center_horizontal"
-        android:text="@string/aboutus2"
+        android:text="For us, construction is not just a lifestyle; it is a form of art. Our products are built using the finest quality materials by our highly skilled associates. Our workers are all professionals in the field. "
         android:id="@+id/textView3"
         android:textStyle="italic"
-        android:textColor="@color/textbody"
         android:layout_marginTop="16dp"
-        android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -26,28 +24,24 @@
         android:layout_height="wrap_content"
         android:textSize="18dp"
         android:gravity="center_horizontal"
-        android:text="@string/aboutus3"
-        android:id="@+id/textView2"
+        android:text="Our work begins with you. We understand the importance of being aware of every step of your renovation: therefore, we provide our customers with the option of viewing a password-protected album that contains the progression of our work.                       "
         android:textStyle="italic"
-        android:textColor="@color/textbody"
-        android:layout_below="@+id/textView3"
+        android:layout_marginTop="16dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:id="@+id/textView2" />
 
     <TextView
+        android:text="Our mission is to help you create an oasis. Whether you have the idea and you just need help executing it, or you need us to help you with the idea, our design team is always ready to provide you with the best options available."
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
         android:gravity="center_horizontal"
-        android:text="@string/aboutus"
-        android:id="@+id/textView"
         android:textStyle="italic"
-        android:textColor="@color/textbody"
-        android:layout_marginTop="145dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView4" />
 
 
-</RelativeLayout>
+</LinearLayout>
